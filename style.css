@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+  font-size: 15px;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-top: 7rem;
+  height: auto;
+}
+
+.card {
+  width: 33.3%;
+  padding: 2rem;
+  align-items: center;
+  text-align: left;
+  height: 100%;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-weight: 400;
+}
+
+.bg-orange {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.bg-dark-cyan {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.bg-very-cyan {
+  background-color: hsl(179, 100%, 13%);
+}
+
+img {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", sans-serif;
+  color: hsl(0, 0%, 95%);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  margin-bottom: 3rem;
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.card a {
+  padding: 10px 20px;
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 99px;
+  font-size: 12px;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.text-orange {
+  color: hsl(31, 77%, 52%);
+}
+
+.text-very-cyan {
+  color: hsl(184, 100%, 22%);
+}
+
+.text-dark-cyan {
+  color: hsl(179, 100%, 13%);
+}
+
+.text-dark-cyan:hover,
+.text-orange:hover,
+.text-very-cyan:hover {
+    background-color: inherit;
+    color: hsl(0, 0%, 95%);
+    border-style: solid;
+    border-width: 1px;
+}
+
+@media screen and (max-width:1100px) {
+    .card {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:865px) {
+    .card {
+        width: 33%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    main {
+        width: 92%;
+        margin-top: 1rem;
+        overflow: scroll;
+        border-radius: 10px;
+    }
+
+    .card {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    img {
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        margin-bottom: 1.5rem;
+    }
+}
